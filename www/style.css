@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  /*height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;*/
+}
+
+#canvasesContainer {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+#drawCanvasContainer {
+  
+}
+#renderCanvasContainer {
+  display: flex;
+  justify-content: center;
+}
+
+#drawCanvas {
+  border: 4px black solid;
+  width: calc(64px * var(--scale));
+  height: calc(64px * var(--scale));
+  image-rendering: pixelated;
+  background-image: url("/checkerboard.png");
+  background-size: calc(var(--checkerScale) * var(--scale) * 1px);
+}
+
+/*#renderCanvas {
+  border: 4px black solid;
+  width: 80%;
+  height: 100%;
+}*/
